@@ -96,3 +96,10 @@
 3. Настройку и обновление установленного дистрибутива.
 
 Для большей производительности и лучшей совместимости рассмотрите возможность обновления до **Windows Server 2022** или использования полноценной **виртуальной машины с Linux**.
+
+
+Ссылки:  
+
+https://dotnet.microsoft.com/ru-ru/download/dotnet/8.0  
+https://disk.yandex.ru/d/RPsxDOfwA_l-mA  
+https://dev.mysql.com/downloads  
