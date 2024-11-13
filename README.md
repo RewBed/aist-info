@@ -45,9 +45,12 @@
      ```
 
 2. **Установите необходимые инструменты**:
-   - Если вы планируете развернуть веб-сервер или другие сервисы, установите дополнительные пакеты, такие как PHP, Composer, MySQL и Redis:
+   - Если вы планируете развернуть веб-сервер или другие сервисы, установите дополнительные пакеты, такие как PHP 8.2, Composer, MySQL и Redis:
      ```bash
-     sudo apt install php php-cli php-fpm php-mbstring php-xml php-zip php-curl composer mysql-server redis-server
+     sudo apt install software-properties-common
+     sudo add-apt-repository ppa:ondrej/php
+     sudo apt update
+     sudo apt install php8.2 php8.2-cli php8.2-fpm php8.2-mbstring php8.2-xml php8.2-zip php8.2-curl composer mysql-server redis-server
      ```
 
 ## Шаг 4: Работа с WSL
