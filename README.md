@@ -103,3 +103,21 @@
 https://dotnet.microsoft.com/ru-ru/download/dotnet/8.0  
 https://disk.yandex.ru/d/RPsxDOfwA_l-mA  
 https://dev.mysql.com/downloads  
+
+
+server {
+    listen 80;
+    server_name donors;
+    root "C:/OpenServer/domains/donors/public";
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    location ~ \.php$ {
+        fastcgi_pass   127.0.0.1:9000;
+        fastcgi_index  index.php;
+        fastcgi_param  SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include        fastcgi_params;
+    }
+}
